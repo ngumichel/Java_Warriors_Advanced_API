@@ -1,5 +1,6 @@
 package com.campus.warriors.engine;
 
+import io.vavr.Tuple2;
 import io.vavr.collection.HashMap;
 import io.vavr.collection.List;
 import io.vavr.control.Option;
@@ -104,6 +105,11 @@ public class Warriors implements WarriorsAPI {
 	@Override
 	public Iterable<Map> availableMaps() {
 		return List.of(this.defaultMap());
+	}
+
+	@Override
+	public Iterable<Game> availableGames() {
+		return this.games.values();
 	}
 
 	@Override

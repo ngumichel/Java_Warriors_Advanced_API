@@ -8,6 +8,7 @@ class WarriorsApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
